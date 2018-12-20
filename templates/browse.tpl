@@ -1,4 +1,4 @@
-{% extends 'pages/index.html' %}
+{% extends 'index.html' %}
 
 {% block browse %}
     <h1>Browse your favorite TV show</h1>
