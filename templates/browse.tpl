@@ -1,9 +1,6 @@
-{% extends 'index.html' %}
-
-{% block browse %}
     <h1>Browse your favorite TV show</h1>
     <div class="browse">
-        {% for show in result %}
+        % for show in result:
             <article class="clickable shadowed" onclick="Browse.loadShow('{{show['id']}}')">
                 <div class="rating">
                     <i class="fas fa-star"></i><span class="average">{{show['rating']['average']}}</span>
@@ -13,6 +10,5 @@
                 </div>
                 <h3 class="show-name">{{show['name']}}</h3>
             </article>
-        {% endfor %}
+        % end
     </div>
-{% endblock %}

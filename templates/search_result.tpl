@@ -6,7 +6,7 @@
 <li class="search-result" onclick="Browse.loadEpisode('{{r['showid']}}', '{{r['episodeid']}}')">{{r['text']}}</li>
 % end
 % if not results:
-    No Resutls :(
+    No Results :(
 % end
 
 </ul>
